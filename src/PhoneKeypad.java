@@ -28,11 +28,11 @@ public class PhoneKeypad {
     private JButton clearButton;
 
 
-    boolean isCalling = false;
+    boolean isCalling = false; // setting the state of our call button to false so that call button is displayed
 
     public PhoneKeypad() {
 
-        zeroButton.addActionListener(new ActionListener() {
+        zeroButton.addActionListener(new ActionListener() { // Zero Button
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -42,7 +42,7 @@ public class PhoneKeypad {
             }
         });
 
-        oneButton.addActionListener(new ActionListener() {
+        oneButton.addActionListener(new ActionListener() { // One Button
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -52,7 +52,7 @@ public class PhoneKeypad {
             }
         });
 
-        twoButton.addActionListener(new ActionListener() {
+        twoButton.addActionListener(new ActionListener() { // Two Button
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -62,7 +62,7 @@ public class PhoneKeypad {
             }
         });
 
-        threeButton.addActionListener(new ActionListener() {
+        threeButton.addActionListener(new ActionListener() { // Three Button
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -72,7 +72,7 @@ public class PhoneKeypad {
             }
         });
 
-        fourButton.addActionListener(new ActionListener() {
+        fourButton.addActionListener(new ActionListener() { // Four Button
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -82,7 +82,7 @@ public class PhoneKeypad {
             }
         });
 
-        fiveButton.addActionListener(new ActionListener() {
+        fiveButton.addActionListener(new ActionListener() { // Five Button
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -92,7 +92,7 @@ public class PhoneKeypad {
             }
         });
 
-        sixButton.addActionListener(new ActionListener() {
+        sixButton.addActionListener(new ActionListener() { // Six Button
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -102,7 +102,7 @@ public class PhoneKeypad {
             }
         });
 
-        sevenButton.addActionListener(new ActionListener() {
+        sevenButton.addActionListener(new ActionListener() { // Seven Button
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -112,7 +112,7 @@ public class PhoneKeypad {
             }
         });
 
-        eightButton.addActionListener(new ActionListener() {
+        eightButton.addActionListener(new ActionListener() { // Eight Button
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -122,7 +122,7 @@ public class PhoneKeypad {
             }
         });
 
-        nineButton.addActionListener(new ActionListener() {
+        nineButton.addActionListener(new ActionListener() { // Nine Button
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -132,10 +132,10 @@ public class PhoneKeypad {
             }
         });
 
-        callEndButton.addActionListener(new ActionListener() {
+        callEndButton.addActionListener(new ActionListener() { // Call/Hangup Button
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (!isCalling) {
+                if (!isCalling) { // If statement used to determine when to switch between Call and Hangup
                     isCalling = true;
                     callEndButton.setBackground(new Color(161, 37, 16));
                     callEndButton.setText("Hang Up");
@@ -148,7 +148,7 @@ public class PhoneKeypad {
             }
         });
 
-        clearButton.addActionListener(new ActionListener() {
+        clearButton.addActionListener(new ActionListener() { // Resets keypad
             @Override
             public void actionPerformed(ActionEvent e) {
                 isCalling = false;
@@ -158,7 +158,7 @@ public class PhoneKeypad {
             }
         });
 
-        starButton.addActionListener(new ActionListener() {
+        starButton.addActionListener(new ActionListener() { // Star Button
             @Override
             public void actionPerformed(ActionEvent e) {
                 String star = starButton.getText();
